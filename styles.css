@@ -1,4 +1,3 @@
-
 /* ===== Homepage ===== */
 
 header {
@@ -11,8 +10,8 @@ header {
 }
 
 .logo {
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
 }
 
 .navbar {
@@ -27,7 +26,7 @@ header {
   color: brown;
   background-color: #f28c8c;
   font-weight: bold;
-  margin: 0 10px;
+  margin: 0px 10px;
   padding: 6px 12px;
   border-radius: 12px;
   display: inline-block;
@@ -42,6 +41,7 @@ header {
   padding: 40px 20px 60px;
 }
 
+
 .card {
   background-color: #fff8ee;
   border-radius: 25px;
@@ -52,15 +52,6 @@ header {
 
 .card h2 {
   text-align: center;
-  margin-top: 0;
-}
-
-.about-card {
-  width: 70%;
-}
-
-.flavors-card {
-  width: 220px;
 }
 
 footer {
@@ -71,17 +62,36 @@ footer {
 }
 
 
+/* ===== Login ===== */
+
+.login-form {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  background-color: #fff8ee;
+  border: 1px solid #e4b48c
+}
+
+.btn {
+  background-color: #f28c8c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
 
 /* ===== Menu View ===== */
 
-.season-card {
-  width: 90%;
+/* To align the Current Season card to others cards*/
+.season-card {                  
   text-align: center;
-}
-
-.season-title {
-  margin: 0 0 8px 0;
-  font-weight: bold;
+  width: 95%;
 }
 
 .season-select {
@@ -89,11 +99,6 @@ footer {
   border-radius: 10px;
   padding: 6px 10px;
   border: 1px solid #e4b48c;
-}
-
-.menu-card,
-.specials-card {
-  width: 90%;
   text-align: center;
 }
 
@@ -104,8 +109,7 @@ footer {
   margin: 15px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.12);
   display: inline-block;
-  width: 260px;
-  vertical-align: top;
+  width: 287px;                 /* To keep the by-3 layout of tiles */
   text-align: center;
 }
 
@@ -125,7 +129,6 @@ footer {
   border-radius: 12px;
   padding: 8px 14px;
   display: inline-block;
-  margin-top: 10px;
 }
 
 .add-btn {
@@ -144,5 +147,47 @@ footer {
   border-radius: 12px;
   padding: 8px 14px;
   cursor: pointer;
-  margin: 4px;
+}
+
+
+/* ===== Customize Order ===== */
+
+.banner-img {
+  display: block;
+  max-width: 240px;
+}
+
+.custom-form {
+  text-align: center;
+}
+
+/* Just to replicate the Finish Order and Edit Order button on instruction */
+.finish-order {
+  text-decoration: none;
+  display: inline-block;
+  width: 95px;
+  padding: 20px 20px;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ===== Order Summary ===== */
+
+.center {
+  text-align: center;
+}
+
+.order-table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.order-table th,
+.order-table td {
+  border: 1px solid black;
+  background-color: #fff8ee;
+  padding: 10px 15px;
+  text-align: left;
+
 }
